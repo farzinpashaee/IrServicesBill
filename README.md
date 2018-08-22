@@ -28,6 +28,15 @@ String paymentId = bill.getPaymentId()
 
 #### Validating Bill
 You can also use BillServices class to validate Bill ID and Payment ID:
+```
+try {
+    System.out.println( "Check: " + BillServices.checkBillId("1677036252"));
+} catch (InvalidInputException e) {
+    System.err.println(e.getMessage());
+} catch (InvalidControlDigitException e) {
+    System.err.println(e.getMessage());
+}
+```
 
 ## Versioning
 
