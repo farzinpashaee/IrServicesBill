@@ -1,4 +1,4 @@
-# IrServicesBill
+# IrServicesBill (کتابخانه قبوض خدمات)
 
 IrServicesBill is a library to generate and validate iranian Services Bill Payment. This library build based on Iranian Banking Informatics Commission document released in 2006.
 
