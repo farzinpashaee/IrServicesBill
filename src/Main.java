@@ -22,9 +22,7 @@ public class Main {
             System.out.println( "Check: " + BillServices.checkBillId("1677036252"));
 
 
-        } catch (InvalidInputException e) {
-            System.err.println(e.getMessage());
-        } catch (InvalidControlDigitException e) {
+        } catch (InvalidInputException | InvalidControlDigitException e) {
             System.err.println(e.getMessage());
         }
 
