@@ -8,7 +8,7 @@ public class Main {
 
              Bill bill = new BillBuilder()
                     .setAmount(4300000)
-                    .setType(Bill.TYPE_ELECTRICITY)
+                    .setType(Bill.Type.ELECTRICITY.getCode())
                     .setBillFileCode("8573723")
                     .setBillBranchCode("223")
                     .setPaymentPeriodCode("1")

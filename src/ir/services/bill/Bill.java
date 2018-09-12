@@ -1,14 +1,6 @@
 package ir.services.bill;
 
 public class Bill {
-
-    public static final String TYPE_WATER = "1" ;
-    public static final String TYPE_ELECTRICITY = "2" ;
-    public static final String TYPE_GAS = "3" ;
-    public static final String TYPE_PHONE = "4" ;
-    public static final String TYPE_MOBILE = "5" ;
-    public static final String TYPE_CITY = "6" ;
-
     private String paymentId;
     private String paymentYearCode;
     private String paymentPeriodCode;
@@ -139,5 +131,24 @@ public class Bill {
 
     public void setBarcodeContent(String barcodeContent) {
         this.barcodeContent = barcodeContent;
+    }
+
+    public enum Type {
+        WATER("1"),
+        ELECTRICITY("2"),
+        GAS("3"),
+        PHONE("4"),
+        MOBILE("5"),
+        CITY("6");
+
+        private String code;
+
+        Type(String code) {
+            this.code = code;
+        }
+
+        public String getCode() {
+            return code;
+        }
     }
 }
