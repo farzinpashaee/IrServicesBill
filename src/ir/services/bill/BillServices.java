@@ -2,12 +2,6 @@ package ir.services.bill;
 
 public class BillServices {
 
-    public static final short BILL_WATER = 1 ;
-    public static final short BILL_ELECTRICITY = 2 ;
-    public static final short BILL_GAS = 3 ;
-    public static final short BILL_PHONE = 4 ;
-    public static final short BILL_MOBILE = 5 ;
-    public static final short BILL_CITY = 6 ;
 
     public static boolean checkBillId( String billId ) throws InvalidInputException, InvalidControlDigitException {
         int len = billId.length();
